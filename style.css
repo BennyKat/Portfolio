@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+h2 {
+   color: #141313;
+}
+
+header {
+  background-color: #0a1e25;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+}
+
+header .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header hr{
+    width: 30%;
+    margin: auto;
+    border: 1px outset #fff;
+}
+
+  
+  .profile-picture img {
+    width: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#about {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+
+#about p {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+#job {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+
+  #job p, h3 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+
+  }
+
+/* Sezione Portfolio */
+#portfolio {
+  padding: 50px 20px;
+  background-color: #e9ecef;
+}
+
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project hr{
+    width: 50%;
+    margin: auto;
+    border: 1px outset #3f4b50;
+    border-radius: 5px;
+}
+.project {
+  width: 48%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.project img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:15px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project i {
+    font-size: 15px;
+}
+
+.project video {
+    width: 80%;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 8px;
+  }
+.project h3 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.project p {
+  text-align: center;
+}
+
+/* Sezione Contatti */
+#contact {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#freelance {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+#freelance .project {
+    width: 80%;
+    display:contents;
+}
+ 
+#freelance img{ width: 30%;}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color:#fff;
+
+}
+
+@media (max-width: 768px) {
+    header {
+      text-align: center;
+      padding: 15px;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project {
+      width: 90%; /* Adattiamo alla larghezza del contenitore */
+    }
+  
+    .project img, .project video {
+      width: 100%; /* Adattiamo il contenuto multimediale */
+    }
+    #about, #job, #portfolio, #contact {
+      padding: 20px 10px;
+    }
+  
+    #about p, #job p {
+      text-align: left; /* Più leggibile su dispositivi stretti */
+      padding: 0 10px;
+    }
+    #freelance img {
+      width: 50%; /* Ridimensionamento automatico */
+    }
+    footer {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    .profile-picture img {
+      width: 50%; /* Rimpiccioliamo le immagini del profilo */
+    }
+  
+    .project img, .project video {
+      width: 100%;
+      border-radius: 5px;
+    }
+    #freelance img {
+      width: 70%; /* Ancora più piccolo su dispositivi molto stretti */
+    }
+  }
+  
